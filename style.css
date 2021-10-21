@@ -27,7 +27,6 @@ nav {
   .navLinks .fa-bars {
     display: none;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -90,6 +89,10 @@ nav {
   }
 }
 
+ul {
+    list-style: none;
+  }
+
 .navLinks ul {
   display: flex;
 }
@@ -110,10 +113,6 @@ nav {
     width: 60%;
     height: 40%;
 } */
-
-ul {
-  list-style: none;
-}
 
 a {
   text-decoration: none;
