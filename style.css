@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 72px;
+    padding: 0 10%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(min-width: 576px){
+    .navLinks .fa-bars {
+        display: none;
+    }
+}
+@media(max-width: 576px){
+    .navLinks ul li {
+        display: none;
+    }
+    .logo {
+        width: 76px;
+        height: 20px;
+        color: #6070FF;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .navLinks .fa-bars {
+        width: 16px;
+    }
+    .container {
+        width: 80%;
+        height: 75%;
+    }
+    .hero {
+        /* height: calc(100vh - 72px);
+        width: 110%;
+        background-image: url("/images/Header-bg.png");
+        background-position: center;
+        background-size: cover; */
+    }
+    .myName {
+        color: #172B4D;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .describtion {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    .socialMedia{
+        color: #7F8CFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    .socialMediaIcons{
+        color: #505F79;
+        margin-top: 5px;
+    }
+}
+
+
+.navLinks ul {
+    display: flex;
+}
+
+.hero{
+    margin-top: 72px;
+    background-image: url("/images/Header-bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 72px);
+    justify-content: center;
+    align-items: center;
+}
+/* .container{
+    width: 60%;
+    height: 40%;
+} */
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.socialMediaIcons ul {
+    display: flex;
+    
+   
+}
+.socialMediaIcons ul li{
+    margin-right: 20px;
+}
