@@ -7,7 +7,7 @@
   2- Add hero section.
   3- edit them to fit mobile version.
 
-![screenshot](./Screenshot-from-site.png)
+![screenshot](./images/Screenshot-portfolio.png)
 
 
 
