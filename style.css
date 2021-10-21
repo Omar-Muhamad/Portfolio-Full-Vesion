@@ -29,10 +29,12 @@ nav {
   }
 
 }
+
 @media (max-width: 576px) {
   .navLinks ul li {
     display: none;
   }
+
   .logo {
     width: 76px;
     height: 20px;
@@ -41,6 +43,7 @@ nav {
     font-size: 18px;
     line-height: 20px;
   }
+
   .navLinks .fa-bars {
     width: 16px;
   }
