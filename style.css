@@ -102,7 +102,6 @@ ul {
   background-image: url("./images/Header-bg.png");
   background-position: center;
   background-size: cover;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   height: calc(100vh - 72px);
