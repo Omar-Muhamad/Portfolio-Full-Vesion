@@ -24,7 +24,7 @@ nav {
 }
 
 @media (min-width: 576px) {
-  .navLinks .fa-bars {
+  .fa-bars {
     display: none;
   }
 }
@@ -50,14 +50,6 @@ nav {
   .container {
     width: 80%;
     height: 75%;
-  }
-
-  .hero {
-    /* height: calc(100vh - 72px);
-        width: 110%;
-        background-image: url("/images/Header-bg.png");
-        background-position: center;
-        background-size: cover; */
   }
 
   .myName {
@@ -108,11 +100,6 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
-/* .container{
-    width: 60%;
-    height: 40%;
-} */
 
 a {
   text-decoration: none;
