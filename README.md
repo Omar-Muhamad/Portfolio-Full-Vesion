@@ -3,7 +3,7 @@
 # Portfolio - Mobile Version
 
 > This is my first try to make a portfolio:
-  Privious project changes:
+  Previous project changes:
     1- Add logo and menu section.
     2- Add hero section.
     3- edit them to fit mobile version.
