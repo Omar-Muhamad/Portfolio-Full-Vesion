@@ -128,7 +128,6 @@ a {
 }
 
 .projectName {
-  /* font-family: Poppins; */
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -142,7 +141,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* font-family: Poppins; */
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
