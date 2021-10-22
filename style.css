@@ -201,9 +201,22 @@ button {
 
 button:hover {
   color: white;
-  border: 1px solid #396df2;
-  background-color: #396df2;
+  border: 1px solid #6070ff;
+  background-color: #6070ff;
   transition: 0.5s;
+}
+
+button:active {
+  color: white;
+  border: 1px solid #2230d2;
+  background-color: #2230d2;
+  transition: 0.5s;
+}
+
+button:disabled {
+  color: #5e6c84;
+  background-color: white;
+  border: 1px solid #5e6c84;
 }
 
 .aboutMe {
@@ -250,7 +263,7 @@ button:hover {
   width: 160px;
 }
 
-.languages1 {
+.aboutMySelf-1 {
   width: 87%;
   margin: auto;
 }
