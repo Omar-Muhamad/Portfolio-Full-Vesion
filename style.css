@@ -128,13 +128,13 @@ a {
 }
 
 .projectName {
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .projectInfo {
@@ -142,7 +142,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -157,7 +157,7 @@ a {
 .counter {
   width: 8px;
   height: 8px;
-  margin: 0px 12px;
+  margin: 0 12px;
 }
 
 .projectDescribtion {
@@ -186,7 +186,6 @@ a {
 
 button {
   width: 125px;
-
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -264,6 +263,7 @@ button:hover {
   align-items: center;
   margin-top: 50px;
 }
+
 .langType {
   background-color: white;
 }
