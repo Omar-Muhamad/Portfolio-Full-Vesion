@@ -15,11 +15,11 @@
     2- Add About me section
     3- Edit them to fit mobile version
 
-  ![screenshot](./images/Screenshot Works section.png)
+  ![screenshot](./images/Screenshot-Works-section.png)
 
-  ![screenshot](./images/Screenshot About me section p1.png)
+  ![screenshot](./images/Screenshot-About-me-section-p1.png)
 
-  ![screenshot](./images/Screenshot About me section p2.png)
+  ![screenshot](./images/Screenshot-About-me-section-p2.png)
 
 
 ## Built With
