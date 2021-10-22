@@ -206,7 +206,7 @@ button:hover {
   transition: 0.5s;
 }
 
-button:active {
+button:focus {
   color: white;
   border: 1px solid #2230d2;
   background-color: #2230d2;
