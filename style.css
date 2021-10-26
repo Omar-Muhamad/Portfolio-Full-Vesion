@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -266,6 +267,7 @@ button:disabled {
 .aboutMySelf-1 {
   width: 87%;
   margin: auto;
+  margin-bottom: 114px;
 }
 
 .langHead {
@@ -313,5 +315,59 @@ button:disabled {
   margin-top: 20px;
   padding: 20px 0;
   border-bottom: 1px solid #dfe1e6;
-  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #6070ff;
+  padding-top: 103px;
+  border-radius: 100px 0 0 0;
+  background-image: url(./images/contact-form-shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 100% -5%;
+}
+.formTitle {
+  width: 87%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.formTitle h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.formTitle p {
+  margin-top: 12px;
+  color: #ebebff;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+form {
+  width: 87%;
+  margin: auto;
+}
+.contact-form {
+  width: 100%;
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 38px 15px 16px;
+  border-radius: 8px;
+  border: none;
+  color: #172b4d;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
 }
