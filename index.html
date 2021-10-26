@@ -224,6 +224,7 @@
         <ul class="contact-form">
           <li>
             <input
+              required
               type="text"
               name="name"
               maxlength="30"
@@ -232,12 +233,22 @@
           </li>
           <li>
             <input
+              required
               type="email"
               name="email"
               placeholder="natajayanj14@gmail.com"
             />
           </li>
+          <li>
+            <textarea
+              name="message"
+              required
+              maxlength="500"
+              placeholder="Write your message here"
+            ></textarea>
+          </li>
         </ul>
+        <button type="submit">Get It Touch</button>
       </form>
     </footer>
   </body>
