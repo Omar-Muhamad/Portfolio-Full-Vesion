@@ -419,7 +419,7 @@ form {
 
 /* ################################## Desktop Version ################################## */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 992px) {
   /* ####### Header ######## */
   .navLinks {
     display: block;
@@ -547,7 +547,7 @@ form {
   }
 
   .aboutMySelf {
-    width: 65%;
+    width: 40%;
   }
 
   .aboutMySelf h2 {
@@ -563,6 +563,7 @@ form {
   }
 
   .aboutMySelf-1 {
+    width: 60%;
     padding-left: 2.16%;
   }
 
