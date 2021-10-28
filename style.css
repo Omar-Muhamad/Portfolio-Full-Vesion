@@ -1,3 +1,4 @@
+/* ####### Reset Styling ######## */
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +6,64 @@
   box-sizing: border-box;
 }
 
+/* ####### General Changes ######## */
 body {
-  background-color: #f7f7f9;
+  background-color: #f4f5f7;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  width: 125px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  background-color: white;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+}
+
+button:hover {
+  color: white;
+  border: 1px solid #6070ff;
+  background-color: #6070ff;
+  transition: 0.5s;
+}
+
+button:focus {
+  color: white;
+  border: 1px solid #2230d2;
+  background-color: #2230d2;
+  transition: 0.5s;
+}
+
+button:disabled {
+  color: #5e6c84;
+  background-color: white;
+  border: 1px solid #5e6c84;
+}
+
+/* ################################## Mobile Version ################################## */
+
+/* ####### Header ######## */
 header {
-  min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: white;
-  border-radius: 0 0 0 100px;
 }
 
 nav {
@@ -23,7 +72,7 @@ nav {
   right: 0;
   top: 0;
   height: 72px;
-  padding: 0 10%;
+  padding: 0 10.76%;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -39,21 +88,28 @@ nav {
   line-height: 20px;
 }
 
+.navLinks {
+  display: none;
+}
+
+/* ####### Hero Section ######## */
 .hero {
-  margin-top: 72px;
-  background-image: url("./images/Header-bg.png");
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+  background-color: white;
   height: calc(100vh - 72px);
-  justify-content: center;
-  align-items: center;
+  background-image: url("./images/Header-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 0 0 0 100px;
 }
 
 .container {
   width: 80%;
+  margin: auto;
+  padding-top: 165px;
   height: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
 .myName {
@@ -82,30 +138,19 @@ nav {
 .socialMediaIcons {
   color: #505f79;
   margin-top: 5px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.socialMediaIcons ul {
   display: flex;
 }
 
-.socialMediaIcons ul li {
+.socialMediaIcons li {
   margin-right: 20px;
 }
 
+/* ####### Works Section ######## */
 .works {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  background-color: #f7f7f9;
+  background-color: #f4f5f7;
 }
 
 .workItem {
@@ -170,6 +215,8 @@ a {
 .languages {
   margin-top: 12px;
   display: flex;
+  flex-wrap: wrap;
+  grid-row-gap: 10px;
 }
 
 .lang {
@@ -183,59 +230,24 @@ a {
   color: #6070ff;
 }
 
-button {
-  width: 125px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  color: #396df2;
-  letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 25px 0;
-  padding: 8px 0;
-  background-color: white;
-  border: 1px solid #396df2;
-  border-radius: 6px;
-}
-
-button:hover {
-  color: white;
-  border: 1px solid #6070ff;
-  background-color: #6070ff;
-  transition: 0.5s;
-}
-
-button:focus {
-  color: white;
-  border: 1px solid #2230d2;
-  background-color: #2230d2;
-  transition: 0.5s;
-}
-
-button:disabled {
-  color: #5e6c84;
-  background-color: white;
-  border: 1px solid #5e6c84;
-}
-
+/* ####### About Me Section ######## */
 .aboutMe {
   width: 100%;
   margin-top: 114px;
-  background-color: #f7f7f9;
+  background-color: white;
+  border-radius: 0 100px 0 0;
+  padding-bottom: 1px;
 }
 
 .container2 {
   padding-top: 114px;
-  width: 100%;
-  background-color: white;
-  border-radius: 0 100px 0 0;
+  width: 87%;
+  margin: auto;
 }
 
 .aboutMySelf {
-  width: 87%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .aboutMySelf h2 {
@@ -265,7 +277,7 @@ button:disabled {
 }
 
 .aboutMySelf-1 {
-  width: 87%;
+  width: 100%;
   margin: auto;
   margin-bottom: 114px;
 }
@@ -279,16 +291,19 @@ button:disabled {
 
 .langType {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .langItem {
   height: 66.72px;
   background-color: #f7f7f9;
-  display: flex;
-  align-items: center;
   margin: 12px 0;
   padding-left: 12px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .langItem p {
@@ -317,7 +332,12 @@ button:disabled {
   border-bottom: 1px solid #dfe1e6;
 }
 
+/* ####### Footer ######## */
 footer {
+  background-color: #fff;
+}
+
+.footreContainer {
   background-color: #6070ff;
   padding-top: 103px;
   border-radius: 100px 0 0 0;
@@ -395,4 +415,217 @@ form {
   padding: 12px 16px;
   width: auto;
   border-radius: 8px;
+}
+
+/* ################################## Desktop Version ################################## */
+
+@media only screen and (min-width: 600px) {
+  /* ####### Header ######## */
+  .navLinks {
+    display: block;
+    display: flex;
+  }
+
+  .navLinks li {
+    margin-left: 32px;
+  }
+
+  .navLinks a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  /* ####### Hero Section ######## */
+  .hero {
+    margin-top: 72px;
+    height: calc(100vh - 72px);
+    width: 100%;
+    background-image: url("./images/Header-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    border-radius: 0 0 0 100px;
+  }
+
+  .hero .container {
+    width: 64%;
+    margin: auto;
+    padding-top: 250px;
+    height: 100%;
+  }
+
+  .myName {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+  }
+
+  /* ####### Works Section ######## */
+  .workItem {
+    margin: 0;
+    width: 80%;
+    height: 550px;
+    margin-top: 142px;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 24px;
+  }
+
+  .workItem:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .projectImg {
+    width: 47%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    padding: 24px;
+  }
+
+  .projectName {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  .projectInfo {
+    padding-right: 21.2%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .projectDescribtion {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
+
+  .languages {
+    margin-top: 24px;
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 12px 7px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border-radius: 8px;
+  }
+
+  /* ####### About Me Section ######## */
+  .aboutMe {
+    width: 100%;
+    margin-top: 142px;
+    padding-bottom: 50px;
+  }
+
+  .container2 {
+    padding-top: 142px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .aboutMySelf {
+    width: 65%;
+  }
+
+  .aboutMySelf h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .aboutMySelf .describtion {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .aboutMySelf-1 {
+    padding-left: 2.16%;
+  }
+
+  .aboutMySelf-1 h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .langHead {
+    margin-top: 0;
+  }
+
+  .langType {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .langItem {
+    width: 122px;
+    height: 120px;
+    background-color: #f7f7f9;
+    margin-right: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .langItem p {
+    margin-left: 0;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  /* ####### Footer ######## */
+  .footreContainer {
+    padding: 142px 0;
+    border-radius: 100px 0 0 0;
+    background-image: url(./images/contact-form-background-shapes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+  }
+
+  .formTitle {
+    width: 40%;
+  }
+
+  form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
 }
