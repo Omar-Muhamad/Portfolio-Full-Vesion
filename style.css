@@ -1,4 +1,5 @@
 /* ####### Reset Styling ######## */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 }
 
 /* ####### General Changes ######## */
+
 body {
   background-color: #f4f5f7;
 }
@@ -61,6 +63,7 @@ button:disabled {
 /* ################################## Mobile Version ################################## */
 
 /* ####### Header ######## */
+
 header {
   width: 100%;
   position: relative;
@@ -93,6 +96,7 @@ nav {
 }
 
 /* ####### Hero Section ######## */
+
 .hero {
   background-color: white;
   height: calc(100vh - 72px);
@@ -146,6 +150,7 @@ nav {
 }
 
 /* ####### Works Section ######## */
+
 .works {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -231,7 +236,8 @@ nav {
 }
 
 /* ####### About Me Section ######## */
-.aboutMe {
+
+#aboutMe {
   width: 100%;
   margin-top: 114px;
   background-color: white;
@@ -333,11 +339,12 @@ nav {
 }
 
 /* ####### Footer ######## */
+
 footer {
   background-color: #fff;
 }
 
-.footreContainer {
+#contact {
   background-color: #6070ff;
   padding-top: 103px;
   border-radius: 100px 0 0 0;
@@ -421,6 +428,7 @@ form {
 
 @media only screen and (min-width: 992px) {
   /* ####### Header ######## */
+
   .navLinks {
     display: block;
     display: flex;
@@ -442,6 +450,7 @@ form {
   }
 
   /* ####### Hero Section ######## */
+
   .hero {
     margin-top: 72px;
     height: calc(100vh - 72px);
@@ -469,6 +478,7 @@ form {
   }
 
   /* ####### Works Section ######## */
+
   .workItem {
     margin: 0;
     width: 80%;
@@ -479,10 +489,17 @@ form {
     flex-direction: row;
     justify-content: space-between;
     border-radius: 24px;
+    transition: all 0.25s ease;
   }
 
   .workItem:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  .workItem:hover {
+    position: relative;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 
   .projectImg {
@@ -533,7 +550,8 @@ form {
   }
 
   /* ####### About Me Section ######## */
-  .aboutMe {
+
+  #aboutMe {
     width: 100%;
     margin-top: 142px;
     padding-bottom: 50px;
@@ -609,7 +627,8 @@ form {
   }
 
   /* ####### Footer ######## */
-  .footreContainer {
+
+  #contact {
     padding: 142px 0;
     border-radius: 100px 0 0 0;
     background-image: url(./images/contact-form-background-shapes.png);

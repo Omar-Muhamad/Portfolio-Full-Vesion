@@ -36,8 +36,6 @@
 
 - HTML
 - CSS
-- Linters
-
 
 
 ## Authors
