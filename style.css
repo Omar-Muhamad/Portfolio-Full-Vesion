@@ -158,7 +158,7 @@ nav {
   background-color: #f4f5f7;
 }
 
-.workItem {
+.workCard {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -479,7 +479,7 @@ form {
 
   /* ####### Works Section ######## */
 
-  .workItem {
+  .workCard {
     margin: 0;
     width: 80%;
     height: 550px;
@@ -492,11 +492,11 @@ form {
     transition: all 0.25s ease;
   }
 
-  .workItem:nth-child(even) {
+  .workCard:nth-child(even) {
     flex-direction: row-reverse;
   }
 
-  .workItem:hover {
+  .workCard:hover {
     position: relative;
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
