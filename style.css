@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* ####### General Changes ######## */
+/* ####### General Styling ######## */
 
 body {
   background-color: #f4f5f7;
@@ -106,6 +106,7 @@ nav {
   background-position: center;
   background-size: contain;
   border-radius: 0 0 0 100px;
+  border: 1px solid #dfe1e6;
 }
 
 .container {
@@ -244,6 +245,7 @@ nav {
   background-color: white;
   border-radius: 0 100px 0 0;
   padding-bottom: 1px;
+  border-top: 1px solid #dfe1e6;
 }
 
 .container2 {
