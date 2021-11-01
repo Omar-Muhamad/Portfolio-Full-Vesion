@@ -106,7 +106,7 @@ nav {
   background-position: center;
   background-size: contain;
   border-radius: 0 0 0 100px;
-  border: 1px solid #dfe1e6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .container {
