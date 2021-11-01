@@ -427,6 +427,10 @@ form {
   border-radius: 8px;
 }
 
+.form button:hover {
+  border: 1px solid white;
+}
+
 /* ################################## Desktop Version ################################## */
 
 @media only screen and (min-width: 992px) {
