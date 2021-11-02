@@ -439,7 +439,9 @@ form {
 }
 
 .form button:hover {
-  border: 1px solid white;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #1e2bb9;
 }
 
 /* ################################## Desktop Version ################################## */
