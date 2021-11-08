@@ -34,6 +34,6 @@
 
 👤 **Omar Muhammad**
 
-- GitHub: [@githubhandle](https://github.com/Omar-Muhamad)
-- Twitter: [@twitterhandle](https://twitter.com/Eng_OmarMuhamad)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/eng-omarmuhammad/)
+- GitHub: [@Omar-Muhamad](https://github.com/Omar-Muhamad)
+- Twitter: [@Eng_OmarMuhamad](https://twitter.com/Eng_OmarMuhamad)
+- LinkedIn: [@eng-omarmuhammad](https://www.linkedin.com/in/eng-omarmuhammad/)
