@@ -3,13 +3,13 @@
 # Portfolio - Full Version
 
   **This is my first portfolio:**
-  1. Previous project changes:
-  - Build Mobile Version First.
-  - Build Desktop Version.
-  - Add Accessibility to site.
+  - Previous project changes:
+  1. Build Mobile Version First.
+  2. Build Desktop Version.
+  3. Add Accessibility to site.
 
-  2. New Changes:
-  - Add Mobile Menu using JavaScript.
+  - New Changes:
+  1. Add Mobile Menu using JavaScript.
 
 
 # Site Live Demo.
