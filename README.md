@@ -4,12 +4,12 @@
 
   **This is my first portfolio:**
   1. Previous project changes:
-  - Build Mobile Version First.
-  - Build Desktop Version.
-  - Add Accessibility to site.
+    - Build Mobile Version First.
+    - Build Desktop Version.
+    - Add Accessibility to site.
 
   2. New Changes:
-  - Add Mobile Menu using JavaScript.
+    - Add Mobile Menu using JavaScript.
 
 
 # Site Live Demo.
