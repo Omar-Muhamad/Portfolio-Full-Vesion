@@ -8,6 +8,9 @@
 }
 
 /* ####### General Styling ######## */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #f4f5f7;
@@ -95,6 +98,23 @@ nav {
 
 .navLinks {
   display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .navLinks.show {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(97, 113, 255, 0.92);
+    text-align: center;
+    z-index: 2;
+    transition: 0.5s;
+    color: #fff;
+  }
+
 }
 
 /* ####### Hero Section ######## */
@@ -454,6 +474,10 @@ form {
     display: flex;
   }
 
+  .navLinks ul {
+    display: flex;
+  }
+
   .navLinks li {
     margin-left: 32px;
   }
@@ -466,6 +490,10 @@ form {
   }
 
   nav .fa-bars {
+    display: none;
+  }
+
+  nav .fa-times {
     display: none;
   }
 
