@@ -3,20 +3,20 @@
 # Portfolio - Full Version
 
   **This is my first portfolio:**
-  - Previous project changes:
+  **- Previous project changes:**
   1. Build Mobile Version First.
   2. Build Desktop Version.
   3. Add Accessibility to site.
 
-  - New Changes:
+  **- New Changes:**
   1. Add Mobile Menu using JavaScript.
 
 
-# Site Live Demo.
+# Site Live Demo
   [Live Demo Link](https://omar-muhamad.github.io/Portfolio-Full-Vesion/)
 
 
-# Site Screenshots Mockup.
+# Site Screenshots Mockup
 
   ![screenshot](./images/WebSite-Mockup.png) 
   
