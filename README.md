@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio - Desktop Version
+# Portfolio - Full Version
 
   **This is my first portfolio:**
   1. Previous project changes:
@@ -11,24 +11,27 @@
   2. New Changes:
   - Add Mobile Menu using JavaScript.
 
-# Portfolio - live Demo.
+
+# Site Live Demo.
   [Live Demo Link](https://omar-muhamad.github.io/Portfolio-Full-Vesion/)
 
 
-# Screenshots Mockup.
+# Site Screenshots Mockup.
 
   ![screenshot](./images/WebSite-Mockup.png) 
   
 
 ## Built With
 
-- HTML
-- CSS
+- HTML.
+- CSS.
+- JavaScript.
+- Linters.
 
 
 ## Authors
 
-👤 **Omar-Muhammad**
+👤 **Omar Muhammad**
 
 - GitHub: [@githubhandle](https://github.com/Omar-Muhamad)
 - Twitter: [@twitterhandle](https://twitter.com/Eng_OmarMuhamad)
