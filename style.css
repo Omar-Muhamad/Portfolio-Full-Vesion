@@ -138,6 +138,7 @@ nav {
 .hero {
   background-color: white;
   height: calc(100vh - 72px);
+  margin-top: 72px;
   background-image: url("./images/Header-bg-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
