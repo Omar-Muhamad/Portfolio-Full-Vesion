@@ -102,12 +102,17 @@ nav {
 
 @media only screen and (max-width: 576px) {
   .navLinks.show {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     position: absolute;
     left: 0;
     top: 0;
     height: 100vh;
     width: 100vw;
+    padding-left: 30px;
+    padding-right: 42px;
+    padding-top: 26px;
     background: rgba(97, 113, 255, 0.92);
     text-align: center;
     z-index: 2;
@@ -115,6 +120,17 @@ nav {
     color: #fff;
   }
 
+  .navLinks ul {
+    margin-top: 4rem;
+  }
+
+  .navLinks li {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+  }
 }
 
 /* ####### Hero Section ######## */
