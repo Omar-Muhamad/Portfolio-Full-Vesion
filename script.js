@@ -1,18 +1,3 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
-
-navLinks.addEventListener('click', (event) => {
-  if (navLinks.classList.contains('show')) {
-    if (event.target.tagName === 'A' || event.target.tagName === 'I') {
-      navLinks.classList.remove('show');
-    }
-  }
-});
-
 
 const data = [
   {
@@ -65,7 +50,26 @@ const data = [
   }
 ];
 
-const progectPopData = data[0];
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+navLinks.addEventListener('click', (event) => {
+  if (navLinks.classList.contains('show')) {
+    if (event.target.tagName === 'A' || event.target.tagName === 'I') {
+      navLinks.classList.remove('show');
+    }
+  }
+});
+
+
+
+
+function CreatePopup(popupData) {
 
 const projectPop = document.createElement("div");
 projectPop.setAttribute("class", "project-pop");
@@ -74,32 +78,32 @@ projectPop.setAttribute("id", "project-pop");
   projectPopContainer.setAttribute("class", "project-pop-container");
     const projectPopName = document.createElement("h2");
     projectPopName.setAttribute("class", "project-pop-name");
-    projectPopName.innerHTML = progectPopData.projectPopName;
+    projectPopName.innerHTML = popupData.projectPopName;
     const techPop = document.createElement("div");
     techPop.setAttribute("class", "tech-pop");
       const techPopType = document.createElement("p");
-      techPopType.innerHTML = progectPopData.techPoptype
+      techPopType.innerHTML = popupData.techPoptype
       const techPopSpan1 = document.createElement("span");
       techPopSpan1.innerHTML = "•"
       const techPopDevType = document.createElement("p");
-      techPopDevType.innerHTML = progectPopData.techPopDevType
+      techPopDevType.innerHTML = popupData.techPopDevType
       const techPopSpan2 = document.createElement("span");
       techPopSpan2.innerHTML = "•"
       const techPopDevYear = document.createElement("p");
-      techPopDevYear.innerHTML = progectPopData.techPopDevYear
+      techPopDevYear.innerHTML = popupData.techPopDevYear
     const ProjectPopImage = document.createElement("img");
-    ProjectPopImage.setAttribute("src", progectPopData.ProjectPopImageUrl)
+    ProjectPopImage.setAttribute("src", popupData.ProjectPopImageUrl)
     ProjectPopImage.setAttribute("alt", "project image")
     const ProjectPopDesc = document.createElement("p");
-    ProjectPopDesc.innerHTML = progectPopData.ProjectPopDesc
+    ProjectPopDesc.innerHTML = popupData.ProjectPopDesc
     const usedLang = document.createElement("div");
     usedLang.setAttribute("class", "used-lang");
       const usedLangP1 = document.createElement("p");
-      usedLangP1.innerHTML = progectPopData.usedLang1
+      usedLangP1.innerHTML = popupData.usedLang1
       const usedLangP2 = document.createElement("p");
-      usedLangP2.innerHTML = progectPopData.usedLang2
+      usedLangP2.innerHTML = popupData.usedLang2
       const usedLangP3 = document.createElement("p");
-      usedLangP3.innerHTML = progectPopData.usedLang3
+      usedLangP3.innerHTML = popupData.usedLang3
     const popBtns = document.createElement("div");
     popBtns.setAttribute("class", "pop-btn");
       const liveBtn = document.createElement("button");
@@ -111,26 +115,44 @@ projectPop.setAttribute("id", "project-pop");
       sourceBtn.setAttribute("type", "button");
       sourceBtn.innerHTML = 'See Source <i class="fab fa-github"></i>'
 
+      const x = document.createElement("i")
+      x.className = "fas fa-times"
+      x.addEventListener("click", () =>{
+          const popup = document.querySelector(".project-pop")
+          if (popup) {
+            popup.parentElement.removeChild(popup)
+          }
+      })
 
+
+      techPop.append(techPopType);
+      techPop.append(techPopSpan1);
+      techPop.append(techPopDevType);
+      techPop.append(techPopSpan2);
+      techPop.append(techPopDevYear);
+      usedLang.append(usedLangP1);
+      usedLang.append(usedLangP2);
+      usedLang.append(usedLangP3);
+      popBtns.append(liveBtn);
+      popBtns.append(sourceBtn);
+      projectPopContainer.append(x)
+      projectPopContainer.append(projectPopName);
+      projectPopContainer.append(techPop);
+      projectPopContainer.append(ProjectPopImage);
+      projectPopContainer.append(ProjectPopDesc);
+      projectPopContainer.append(usedLang);
+      projectPopContainer.append(popBtns);
+      projectPop.append(projectPopContainer);
+      return projectPop
+}
 const body = document.body;
 
-
-techPop.append(techPopType);
-techPop.append(techPopSpan1);
-techPop.append(techPopDevType);
-techPop.append(techPopSpan2);
-techPop.append(techPopDevYear);
-usedLang.append(usedLangP1);
-usedLang.append(usedLangP2);
-usedLang.append(usedLangP3);
-popBtns.append(liveBtn);
-popBtns.append(sourceBtn);
-projectPopContainer.append(projectPopName);
-projectPopContainer.append(techPop);
-projectPopContainer.append(ProjectPopImage);
-projectPopContainer.append(ProjectPopDesc);
-projectPopContainer.append(usedLang);
-projectPopContainer.append(popBtns);
-projectPop.append(projectPopContainer);
-console.log(body,projectPop)
-body.append(projectPop);
+document.querySelectorAll(".pop-btn").forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    if  (!document.querySelector(".project-pop")){
+      const popupData = data[parseInt(event.target.id)]
+      const popup = CreatePopup(popupData)
+      body.append(popup)
+    }
+  })
+})
