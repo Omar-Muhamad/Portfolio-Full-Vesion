@@ -70,7 +70,7 @@ navLinks.addEventListener('click', (event) => {
 
 
 function CreatePopup(popupData) {
-
+  
 const projectPop = document.createElement("div");
 projectPop.setAttribute("class", "project-pop");
 projectPop.setAttribute("id", "project-pop");
@@ -82,6 +82,7 @@ projectPop.setAttribute("id", "project-pop");
     const techPop = document.createElement("div");
     techPop.setAttribute("class", "tech-pop");
       const techPopType = document.createElement("p");
+      techPopType.setAttribute("class", "tech-pop-type");
       techPopType.innerHTML = popupData.techPoptype
       const techPopSpan1 = document.createElement("span");
       techPopSpan1.innerHTML = "•"
@@ -95,6 +96,7 @@ projectPop.setAttribute("id", "project-pop");
     ProjectPopImage.setAttribute("src", popupData.ProjectPopImageUrl)
     ProjectPopImage.setAttribute("alt", "project image")
     const ProjectPopDesc = document.createElement("p");
+    ProjectPopDesc.setAttribute("class", "project-pop-desc");
     ProjectPopDesc.innerHTML = popupData.ProjectPopDesc
     const usedLang = document.createElement("div");
     usedLang.setAttribute("class", "used-lang");
@@ -104,20 +106,22 @@ projectPop.setAttribute("id", "project-pop");
       usedLangP2.innerHTML = popupData.usedLang2
       const usedLangP3 = document.createElement("p");
       usedLangP3.innerHTML = popupData.usedLang3
-    const popBtns = document.createElement("div");
+      const popBtns = document.createElement("div");
+    const span = document.createElement("hr");
+    span.setAttribute("class", "line-span");
     popBtns.setAttribute("class", "pop-btn");
       const liveBtn = document.createElement("button");
       liveBtn.setAttribute("class", "live-btn");
       liveBtn.setAttribute("type", "button");
-      liveBtn.innerHTML = 'See live <i class="fas fa-arrow-circle-right"></i>'
+      liveBtn.innerHTML = 'See live <i class="fas fa-arrow-circle-right fa-lg"></i>'
       const sourceBtn = document.createElement("button");
-      sourceBtn.setAttribute("class", "live-btn");
+      sourceBtn.setAttribute("class", "source-btn");
       sourceBtn.setAttribute("type", "button");
-      sourceBtn.innerHTML = 'See Source <i class="fab fa-github"></i>'
+      sourceBtn.innerHTML = 'See Source <i class="fab fa-github fa-lg"></i>'
 
-      const x = document.createElement("i")
-      x.className = "fas fa-times"
-      x.addEventListener("click", () =>{
+      const closeBtnPop = document.createElement("i")
+      closeBtnPop.className = "fas fa-times"
+      closeBtnPop.addEventListener("click", () =>{
           const popup = document.querySelector(".project-pop")
           if (popup) {
             popup.parentElement.removeChild(popup)
@@ -135,12 +139,13 @@ projectPop.setAttribute("id", "project-pop");
       usedLang.append(usedLangP3);
       popBtns.append(liveBtn);
       popBtns.append(sourceBtn);
-      projectPopContainer.append(x)
+      projectPopContainer.append(closeBtnPop)
       projectPopContainer.append(projectPopName);
       projectPopContainer.append(techPop);
       projectPopContainer.append(ProjectPopImage);
       projectPopContainer.append(ProjectPopDesc);
       projectPopContainer.append(usedLang);
+      projectPopContainer.append(span);
       projectPopContainer.append(popBtns);
       projectPop.append(projectPopContainer);
       return projectPop
