@@ -425,6 +425,30 @@ form {
   min-height: 170px;
 }
 
+.form-control.success input {
+  border: 3px solid #2ecc72;
+}
+
+.submit-btn small {
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border: 3px solid #e74c3c;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.submit-btn.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 .form button {
   margin: 0;
   padding: 12px 16px;
