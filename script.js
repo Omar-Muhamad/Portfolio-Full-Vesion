@@ -5,7 +5,7 @@ const data = [
     techPoptype: 'CANOPY',
     techPopDevType: 'Back End Dev',
     techPopDevYear: '2015',
-    ProjectPopImageUrl: '/images/Snapshoot-Portfolio.png',
+    ProjectPopImageUrl: './images/Snapshoot-Portfolio.png',
     ProjectPopDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     usedLang1: 'html',
     usedLang2: 'CSS',
