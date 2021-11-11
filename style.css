@@ -392,48 +392,37 @@ form {
   padding-bottom: 45px;
 }
 
-.contact-form {
+.contactForm {
   width: 100%;
   padding: 45px 0 0 0;
   display: flex;
   flex-direction: column;
 }
 
-.contact-form input {
+.form-control input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
   padding: 15px 38px 15px 16px;
+  border: none;
   border-radius: 8px;
-  border: 1px solid #cfd8dc;
   color: #172b4d;
   font-weight: normal;
   font-size: 17px;
-  line-height: 20px;
+  position: relative;
 }
 
-.contact-form input:focus {
-  outline: none !important;
-  border: 4px solid #000000a6;
-}
-
-.contact-form textarea {
+.form-control textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
   padding: 15px 38px 15px 16px;
   border-radius: 8px;
-  border: 1px solid #cfd8dc;
   color: #b3bac5;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   min-height: 170px;
-}
-
-.contact-form textarea:focus {
-  outline: none !important;
-  border: 4px solid #000000a6;
 }
 
 .form button {
@@ -840,6 +829,11 @@ form {
     flex-direction: column;
     align-items: center;
     padding-bottom: 0;
+  }
+
+  .form-control i {
+    margin-top: -2.8%;
+    margin-left: 37.5%;
   }
 
   /* ######### Project Pop-up ##########  */

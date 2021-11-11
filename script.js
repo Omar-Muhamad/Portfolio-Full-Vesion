@@ -1,3 +1,5 @@
+// ######## project card pop-up data ########
+
 const data = [
   {
     id: 1,
@@ -6,7 +8,8 @@ const data = [
     techPopDevType: 'Back End Dev',
     techPopDevYear: '2015',
     ProjectPopImageUrl: './images/Snapshoot-Portfolio.png',
-    ProjectPopDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ProjectPopDesc:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     usedLang1: 'html',
     usedLang2: 'CSS',
     usedLang3: 'JavaScript',
@@ -18,7 +21,8 @@ const data = [
     techPopDevType: 'Full Stack Dev',
     techPopDevYear: '2015',
     ProjectPopImageUrl: './images/Snapshoot-Portfolio1.png',
-    ProjectPopDesc: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    ProjectPopDesc:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     usedLang1: 'html',
     usedLang2: 'CSS',
     usedLang3: 'JavaScript',
@@ -30,7 +34,8 @@ const data = [
     techPopDevType: 'Full Stack Dev',
     techPopDevYear: '2015',
     ProjectPopImageUrl: './images/Snapshoot-Portfolio2.png',
-    ProjectPopDesc: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    ProjectPopDesc:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     usedLang1: 'html',
     usedLang2: 'CSS',
     usedLang3: 'JavaScript',
@@ -42,12 +47,15 @@ const data = [
     techPopDevType: 'Lead Developer',
     techPopDevYear: '2018',
     ProjectPopImageUrl: './images/Snapshoot-Portfolio3.png',
-    ProjectPopDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    ProjectPopDesc:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     usedLang1: 'html',
     usedLang2: 'CSS',
     usedLang3: 'JavaScript',
   },
 ];
+
+// ######## Mobile menu ########
 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
@@ -63,6 +71,8 @@ navLinks.addEventListener('click', (event) => {
     }
   }
 });
+
+// ######## project card pop-up ########
 
 function CreatePopup(popupData) {
   const projectPop = document.createElement('div');
@@ -159,4 +169,54 @@ document.querySelectorAll('.pop-btn').forEach((btn) => {
       body.append(popup);
     }
   });
+});
+
+// ######## form client side validation ########
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const formBtn = document.querySelector('.submit-btn');
+
+function setErrorFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
+}
+
+function isEmail(email) {
+  return /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/.test(email);
+}
+
+function checkInputs() {
+  let errorMsg;
+  let valid = true;
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    valid = false;
+    errorMsg = 'Email cannot be blank';
+    setErrorFor(email, 'Email cannot be blank');
+  } else if (!isEmail(emailValue)) {
+    valid = false;
+    errorMsg = 'Email is not valid';
+    setErrorFor(email, 'Email is not valid');
+  } else {
+    setSuccessFor(email);
+  }
+  return { valid, errorMsg };
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const validation = checkInputs();
+  if (validation.valid) {
+    form.submit();
+  } else {
+    formBtn.classList.add('error');
+    formBtn.querySelector('small').innerHTML = validation.errorMsg;
+  }
 });
