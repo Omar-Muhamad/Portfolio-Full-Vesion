@@ -243,35 +243,40 @@
             with it
           </p>
         </div>
-        <form class="form" action="https://formspree.io/f/xrgrvjjr" method="post">
-          <ul class="contact-form">
-            <li>
+        <form class="form" id="form" action="https://formspree.io/f/xrgrvjjr" method="post" novalidate>
+          <ul class="contactForm">
+            <li class="form-control">
               <input
                 type="text"
                 name="name"
                 maxlength="30"
                 placeholder="Full name"
+                id="userName"
                 required
               />
             </li>
-            <li>
+            <li class="form-control">
               <input
-                type="email"
+                type="email" oninput="null"
                 name="email"
                 placeholder="Email address"
-                required
+                id="email"
               />
             </li>
-            <li>
+            <li class="form-control">
               <textarea
                 name="message"
                 maxlength="500"
                 placeholder="Write your message here"
+                id="textArea"
                 required
               ></textarea>
             </li>
           </ul>
-          <button type="submit">Get It Touch</button>
+          <div class="submit-btn">
+            <button class="form-control" id="form-btn" type="submit">Get It Touch</button>
+            <small ></small>
+          </div>
         </form>
       </div>
     </footer>
