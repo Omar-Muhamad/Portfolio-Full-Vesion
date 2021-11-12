@@ -1,4 +1,18 @@
 // ############ local Storage #############
+function loadStoredData() {
+  const userData = JSON.parse(localStorage.getItem('formData'));
+
+  if (userData) {
+    const form = document.getElementById('form');
+    const formElements = [...form.elements];
+    formElements.forEach((element) => {
+      if (element.tagName !== 'BUTTON') {
+        element.value = userData[element.id] || '';
+      }
+    });
+  }
+}
+loadStoredData();
 
 const storeFormData = (inputID) => {
   const formData = JSON.parse(localStorage.getItem('formData')) || {};
