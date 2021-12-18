@@ -2,7 +2,7 @@
 
 # Portfolio - Full Version
 
-  **This is my first portfolio:**
+  **This is my first portfolio I built it using HTML, Css, and JavaScript**
 
   **Previous project changes:**
   1. Build Mobile Version First.
